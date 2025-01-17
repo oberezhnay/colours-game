@@ -33,12 +33,14 @@
 .stop-btn {
   position: absolute;
   z-index: 10;
-  top: 48%;
+  top: 42%;
   left: 50%;
   transform: translateX(-50%);
-  width: 8vw;
-  height: 10vh;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  font-size: 18px;
-  /* transform: translateY(50%); */
+  font-size: 20px;
+  color:rgb(157, 7, 198);
+  border-color: blueviolet;
+  padding: 0px;
 }
