@@ -32,6 +32,7 @@
 
 .stop-btn {
   position: absolute;
+  transition: background-color 0.3s ease-in-out;
   z-index: 10;
   top: 42%;
   left: 50%;
@@ -43,4 +44,15 @@
   color:rgb(157, 7, 198);
   border-color: blueviolet;
   padding: 0px;
+  box-shadow: 5px 5px 5px rgba(138, 43, 226, 0.7);
+}
+
+.stop-btn:hover {
+  background-color: rgb(167, 49, 200);
+  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7);
+  transition: background-color 0.3s ease-in-out;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  width: 105px;
+  height: 105px;
 }
