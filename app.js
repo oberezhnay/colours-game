@@ -4,6 +4,19 @@ let gameOn = 0;
 let gameInterval;
 let  prev, curr;
 
+document.getElementById('intro-screen').addEventListener('click', () => {
+  const introScreen = document.getElementById('intro-screen');
+  const gameContainer = document.getElementById('game-container');
+
+  introScreen.style.transition = 'opacity 1s ease-out';
+  introScreen.style.opacity = '0';
+
+  setTimeout(() => {
+    introScreen.style.display = 'none';
+    gameContainer.style.display = 'block';
+  }, 1000);
+});
+
 stopBtn.addEventListener('click', () => {
   if ( !gameOn ){
     startGame();

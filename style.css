@@ -32,7 +32,7 @@
 
 .stop-btn {
   position: absolute;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
   z-index: 10;
   top: 42%;
   left: 50%;
@@ -41,18 +41,72 @@
   height: 100px;
   border-radius: 50%;
   font-size: 20px;
-  color:rgb(157, 7, 198);
-  border-color: blueviolet;
+  color:#111;
+  /* border-color: blueviolet; */
   padding: 0px;
   box-shadow: 5px 5px 5px rgba(138, 43, 226, 0.7);
 }
 
 .stop-btn:hover {
-  background-color: rgb(167, 49, 200);
-  box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.7);
+  background-color: rgb(0, 0, 0);
+  box-shadow: 5px 5px 5px rgba(1, 1, 1, 0.7);
   transition: background-color 0.3s ease-in-out;
   color: #fff;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
   width: 105px;
   height: 105px;
+}
+
+#intro-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #c38099;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 11;
+}
+
+#intro-image {
+  width: 60%;
+  max-width: 600px;
+  animation: zoomIn 3s ease-in-out infinite;
+}
+
+#intro-text {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  animation: fadeInOut 2s ease-in-out infinite;
+  text-align: center;
+}
+
+/* Keyframes for animations */
+@keyframes zoomIn {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Hide game area initially */
+#game-container {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
 }
