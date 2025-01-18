@@ -29,7 +29,7 @@ stopBtn.addEventListener('click', () => {
 
 function startGame() {
   hideBlocks();
-  gameInterval = setInterval(refreshColours, 1400);
+  gameInterval = setInterval(refreshColours, 2000);
   stopBtn.textContent = 'STOP';
 }
 
